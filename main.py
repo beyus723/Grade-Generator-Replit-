@@ -15,9 +15,16 @@ percentage = round(percentage, 2)
 
 #Use if/elif statements to show users the letter grade they received.
 
+
 print("\n")
 print("-" * 7, "Your score", "-" * 7)
-print("\nYou received", int(pointsReceived), "of", int(maxScore), "maximum points, which is", percentage, "% of the total score.\n")
+
+if percentage > 100:
+  print("\nSorry, you typed in something wrong.")
+else:
+  print("\nYou received", int(pointsReceived), "of", int(maxScore), "maximum points, which is", percentage, "% of the total score.\n")
+
+
 
 if percentage >= 90 and percentage <= 100:
   print(percentage, "% gives you grade A+. It's the best possible score and you can't make it better. Well done!")
