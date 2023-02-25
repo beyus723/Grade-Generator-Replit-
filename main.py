@@ -17,7 +17,11 @@ percentage = round(percentage, 2)
 
 print("\n")
 print("-" * 7, "Your score", "-" * 7)
-print("\nYou received ", int(pointsReceived), " points of ", int(maxScore), " maximum points, which is ", percentage, "% of the total test score.")
+print("\nYou received", int(pointsReceived), "of", int(maxScore), "maximum points, which is", percentage, "% of the total score.")
+
+if percentage >= 90 and percentage <= 100:
+  print("\nIt's grade A+. It's the best possible score and you can't make it better. Well done!")
+elif per
 
 
 
